@@ -1,0 +1,64 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './ProductList.css';
+import Product1 from '../assets/Product1.png';
+import Product2 from '../assets/Product2.png';
+import Felt from '../assets/Felt.png';
+import Glue from '../assets/Glue.png';
+import ColoredPencils from '../assets/ColoredPencils.png';
+import HolePunch from '../assets/HolePunch.png';
+import GooglyEyes from '../assets/GooglyEyes.png';
+import Markers from '../assets/Markers.png';
+import DotMarkers from '../assets/DotMarkers.png';
+import PaintSticks from '../assets/PaintSticks.png';
+import PaperRolls from '../assets/PaperRolls.png';
+import Pegs from '../assets/Pegs.png';
+import Ruler from '../assets/Ruler.png';
+import Stapler from '../assets/Stapler.png';
+import Straws from '../assets/Straws.png';
+import Twine from '../assets/Twine.png';
+import Ribbon from '../assets/Ribbon.png';
+const products = [
+  { img: Product1, name: 'Acrylic Paint', price: '$19.99' },
+  { img: Product2, name: 'Adhesive Paper', price: '$29.99' },
+  { img: Felt, name: 'Felt', price: '$39.99' },
+  { img: Glue, name: 'Glue', price: '$55.90' },
+  { img: ColoredPencils, name: 'Colored Pencils', price: '$22.99' },
+  { img: HolePunch, name: 'HolePunch', price: '$33.99' },
+  { img: GooglyEyes, name: 'GooglyEyes', price: '$44.99' },
+  { img: Markers, name: 'Markers', price: '$59.99' },
+  { img: DotMarkers, name: 'DotMarkers', price: '$59.99' },
+  { img: PaintSticks, name: 'PaintSticks', price: '$59.99' },
+  { img: PaperRolls, name: 'PaperRolls', price: '$59.99' },
+  { img: Pegs, name: 'Pegs', price: '$59.99' },
+  { img: Ribbon, name: 'Ribbo', price: '$59.99' },
+  { img: Ruler, name: 'Ruler', price: '$59.99' },
+  { img: Stapler, name: 'Stapler', price: '$59.99' },
+  { img: Straws, name: 'Straws', price: '$59.99' },
+  { img: Twine, name: 'Twine', price: '$59.99' },
+];
+function ProductList() {
+  const navigate = useNavigate();
+
+  const handleProductClick = (productName) => {
+    navigate(`/product/${productName}`);
+  };
+
+  return (
+    <div className="product-list">
+      {products.map((product, index) => (
+        <div
+          className="product"
+          key={index}
+          onClick={() => handleProductClick(product.name)}
+        >
+          <img src={product.img} alt={product.name} />
+          <h2>{product.name}</h2>
+          <p>{product.price}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default ProductList;

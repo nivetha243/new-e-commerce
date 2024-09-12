@@ -1,0 +1,102 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    position: relative;
+    justify-content: space-between;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .nav-left a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-left a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .search-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 20px;
+  }
+  
+  .search-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    width: 100%;
+  }
+  
+  .search-container button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: white;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .nav-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-right a:hover {
+    text-decoration: underline;
+  }
+  
+  .cart {
+    font-size: 24px;
+  }
+  
+  .second-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px 20px;
+  }
+  
+  .second-navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 15px;
+  }
+  
+  .second-navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .second-navbar a.active {
+    font-weight: bold;
+  }
+  

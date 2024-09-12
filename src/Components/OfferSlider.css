@@ -1,0 +1,48 @@
+.offer-slider {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .offer-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .offer-slide {
+    min-width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .offer-slide img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  
+  .offer-slide h2, .offer-slide p {
+    margin: 10px 0;
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  

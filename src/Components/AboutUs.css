@@ -1,0 +1,15 @@
+.about-us {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .about-us h1 {
+    margin: 0 0 10px;
+  }
+  
+  .about-us p {
+    margin: 0;
+    color: #555;
+  }
+  
