@@ -5,9 +5,13 @@ import OfferSlider from './Components/OfferSlider';
 import ProductList from './Components/ProductList';
 import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
-import ProductDetail from './Components/ProductDetails'; // Corrected: singular
+import ProductDetail from './Components/ProductDetails';
 import Checkout from './Components/Checkout';
 import OrderConfirmation from './Components/OrderConfirmation';
+import SignUp from './Components/SignUp';
+import Login from './Components/Login'; // Import LoginPage
+import Cart from './Components/Cart';
+
 import './App.css';
 
 function App() {
@@ -16,7 +20,6 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          {/* Home route showing OfferSlider, ProductList */}
           <Route path="/" element={
             <>
               <OfferSlider />
@@ -25,16 +28,12 @@ function App() {
               <Footer />
             </>
           } />
-
-          {/* Route for the product detail page */}
           <Route path="/product/:productName" element={<ProductDetail />} />
-
-          {/* Route for the checkout page */}
           <Route path="/checkout" element={<Checkout />} />
-
-          {/* Route for the order confirmation page */}
           <Route path="/order-confirmation" element={<OrderConfirmation />} />
-
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} /> {/* Route for Login */}
+          <Route path="/Cart" element={<Cart />} /> 
         </Routes>
       </div>
     </Router>
