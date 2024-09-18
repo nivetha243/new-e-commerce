@@ -1,0 +1,88 @@
+/* Container for the erasers page */
+.erasers-page {
+    padding: 20px;
+    background-color: white;
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the erasers page */
+  }
+  
+  /* Layout for the circle placeholders */
+  .circle-layout {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center horizontally */
+    gap: 15px; /* Adjust spacing between circles */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for individual circle items */
+  .circle-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px; /* Adjust width for oval shape */
+    height: 80px; /* Adjust height for oval shape */
+    border-radius: 50% / 30%; /* Create an oval shape */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    background-color: #f9f9f9; /* Slight background color */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  }
+  
+  /* Placeholder for circle content */
+  .circle-placeholder {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Layout for the box placeholders */
+  .box-layout {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center horizontally */
+    gap: 15px; /* Space between boxes */
+  }
+  
+  /* Styling for individual box items */
+  .box-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    background-color: #f9f9f9; /* Slight background color */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  }
+  
+  /* Placeholder for box content */
+  .box-placeholder {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .circle-item {
+      width: 100px; /* Adjust size for smaller screens */
+      height: 70px;
+    }
+  
+    .box-item {
+      width: 120px; /* Adjust size for smaller screens */
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .circle-item {
+      width: 80px; /* Adjust size for mobile screens */
+      height: 55px;
+    }
+  
+    .box-item {
+      width: 100px; /* Adjust size for mobile screens */
+      height: 100px;
+    }
+  }
+  

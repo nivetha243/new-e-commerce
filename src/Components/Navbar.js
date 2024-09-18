@@ -17,14 +17,15 @@ function Navbar() {
           <button type="button"></button>
         </div>
         <div className="nav-right">
+        <Link to="/Profile" className="Profile-btn">Profile</Link>
         <Link to="/Signup" className="Sign-btn">Sign Up</Link>
         <Link to="/Return-order" className="ReturnOrder-btn">Return-order</Link>
         <Link to="/Cart" className="Cart-btn">Cart</Link>
         </div>
       </nav>
       <nav className="second-navbar">
-        <a href="#all" className="active">All</a>
-        <a href="#erasers">Erasers</a>
+      <Link to="/All" className="All-btn">All</Link>
+      <Link to="/Erasers" className="Erasers-btn">Erasers</Link>
         <a href="#pastels">Pastels</a>
         <a href="#paper">Paper</a>
         <a href="#sketches">Sketches</a>
