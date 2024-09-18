@@ -73,9 +73,7 @@ header {
   align-items: center;
 }
 
-.nav-right .Sign-btn,
-.nav-right .ReturnOrder-btn,
-.nav-right .Cart-btn {
+.nav-btn {
   color: #fff;
   text-decoration: none;
   padding: 8px 15px;
@@ -86,9 +84,7 @@ header {
   transition: background-color 0.3s;
 }
 
-.nav-right .Sign-btn:hover,
-.nav-right .ReturnOrder-btn:hover,
-.nav-right .Cart-btn:hover {
+.nav-btn:hover {
   background-color: #666;
 }
 
@@ -99,7 +95,7 @@ header {
   padding: 10px 0;
 }
 
-.second-navbar a {
+.second-navbar .nav-item {
   color: #333;
   text-decoration: none;
   padding: 10px 20px;
@@ -108,12 +104,12 @@ header {
   transition: color 0.3s;
 }
 
-.second-navbar a.active {
+.second-navbar .nav-item.active {
   font-weight: bold;
   color: #007bff;
 }
 
-.second-navbar a:hover {
+.second-navbar .nav-item:hover {
   color: #555;
 }
 
@@ -139,7 +135,7 @@ header {
     align-items: center;
   }
 
-  .second-navbar a {
+  .second-navbar .nav-item {
     display: block;
     padding: 10px 0;
   }
