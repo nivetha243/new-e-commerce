@@ -117,7 +117,7 @@ const ProductDetail = () => {
   const { productName } = useParams(); // Get the product name from the URL
   const navigate = useNavigate(); // Initialize useNavigate for navigation
   const product = productData[productName]; // Find the product by its name
-  const [cart, setCart] = useState([]); // State for cart
+  const [, setCart] = useState([]); // State for cart
 
   if (!product) {
     return <div>Product not found.</div>; // Handle case where product is not found
