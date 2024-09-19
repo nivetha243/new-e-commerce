@@ -1,5 +1,6 @@
 // LoginPage.js
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
@@ -9,6 +10,7 @@ const Login = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const navigate = useNavigate(); // Initialize navigate
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,7 +28,6 @@ const Login = () => {
     if (!password) newErrors.password = 'Password is required';
 
     setErrors(newErrors);
-
     return Object.keys(newErrors).length === 0;
   };
 
@@ -35,6 +36,9 @@ const Login = () => {
     if (validateForm()) {
       // Add login submission logic here
       console.log('Form Data:', formData);
+
+      // Navigate to the All products page after successful login
+      navigate('/all'); // Adjust the route to match your app's routing
     }
   };
 

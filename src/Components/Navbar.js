@@ -14,22 +14,23 @@ function Navbar() {
         </div>
         <div className="search-container">
           <input type="text" placeholder="Search..." />
-          <button type="button"></button>
+          <button type="button">Search</button>
         </div>
         <div className="nav-right">
-        <Link to="/Signup" className="Sign-btn">Sign Up</Link>
-        <Link to="/Return-order" className="ReturnOrder-btn">Return-order</Link>
-        <Link to="/Cart" className="Cart-btn">Cart</Link>
+          <Link to="/Profile" className="nav-btn">Profile</Link>
+          <Link to="/Signup" className="nav-btn">Sign Up</Link>
+          <Link to="/Return-order" className="nav-btn">Return Order</Link>
+          <Link to="/Cart" className="nav-btn">Cart</Link>
         </div>
       </nav>
       <nav className="second-navbar">
-        <a href="#all" className="active">All</a>
-        <a href="#erasers">Erasers</a>
-        <a href="#pastels">Pastels</a>
-        <a href="#paper">Paper</a>
-        <a href="#sketches">Sketches</a>
-        <a href="#pen-pencil">Pen & Pencil</a>
-        <a href="#paint">Paint</a>
+        <Link to="/all" className="nav-item">All </Link>
+        <Link to="/product/Erasers" className="nav-item">Erasers</Link>
+        <Link to="/product/Pastels" className="nav-item">Pastels</Link>
+        <Link to="/product/Paper" className="nav-item">Paper</Link>
+        <Link to="/product/Sketches" className="nav-item">Sketches</Link>
+        <Link to="/product/Pen & Pencil" className="nav-item">Pen & Pencil</Link>
+        <Link to="/product/Paint" className="nav-item">Paint</Link>
       </nav>
     </header>
   );
